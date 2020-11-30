@@ -1,0 +1,1 @@
+for /f "usebackq tokens=1" %a in (`ssh pi@raspberrypi.local "cat /etc/pihole/setupVars.conf | grep IPV6" `) do echo %a & FOR /f "tokens=1,2 delims='='" %b IN ("%a") do echo %c  & netsh interface ipv6 add dnsserver "Ethernet" address=%c index=1

@@ -1,0 +1,5 @@
+In order for the program shortcut to work you must:
+1)create a shortcut in this folder and type this on the field target: 
+  C:\Windows\System32\cmd.exe /k type pihole_dns_update_win10.txt | cmd.exe & timeout 5 & exit
+2)You must have already enabled the windows ssh client feature and..
+3)You must have copied the ssh keys to the raspberry pi server.(theres a lot of tutorials on how to do this)
